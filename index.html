@@ -130,47 +130,44 @@
     }
 
     /* Responsive Design */
-    @media (max-width: 768px) {
-      .container {
-        padding: 15px;
-      }
-      .gift-box {
-        font-size: 140px;
-      }
-      .reveal-content {
-        font-size: 14px;
-      }
-      .button {
-        font-size: 13px;
-      }
-      .gif-container {
-        max-width: 300px;
-        transform: scale(0.8);
-      }
-    }
+   @media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  .gif-container {
+    max-width: 100%; /* Nutze die volle Breite des Containers */
+    transform: scale(1); /* Keine unnötige Verkleinerung */
+    margin-top: 10px; /* Mehr Platz oben */
+    margin-bottom: 10px; /* Mehr Platz unten */
+  }
+  .reveal-content {
+    font-size: 14px;
+  }
+  .button {
+    font-size: 13px;
+  }
+}
 
-    @media (max-width: 480px) {
-      .container {
-        padding: 10px;
-      }
-      .gift-box {
-        font-size: 120px;
-      }
-      .gif-container {
-        max-width: 250px;
-        transform: scale(0.75);
-        margin-top: -30px;
-        margin-bottom: -30px;
-      }
-      .reveal-content {
-        font-size: 12px;
-      }
-      .button {
-        font-size: 12px;
-        margin-top: 10px;
-        margin-bottom: 50px;
-      }
-    }
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  .gif-container {
+    max-width: 100%; /* Nutze die volle Breite */
+    transform: scale(1); /* Verhindere das Schrumpfen */
+    margin: 5px 0; /* Weniger Abstand oben/unten */
+  }
+  img {
+    border-radius: 5px; /* Optional: Abgerundete Ecken */
+  }
+  .reveal-content {
+    font-size: 12px;
+  }
+  .button {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
 
   </style>
 </head>
