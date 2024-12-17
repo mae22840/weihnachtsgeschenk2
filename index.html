@@ -74,6 +74,10 @@
     .reveal-content {
       margin-top: 20px;
       font-size: 18px;
+      line-height: 1.4;
+      max-width: 600px;
+      word-wrap: break-word;
+      margin: 0 auto;
       opacity: 0;
       transition: opacity 1s ease-in;
       text-align: left; /* Sicherstellen, dass auch der Text im reveal-content links ausgerichtet ist */
@@ -81,13 +85,13 @@
 
     .gif-container {
       width: 100%;
-      max-width: 400px;
+      max-width: 700px;
       display: flex;
-      justify-content: flex-start; /* Links ausrichten */
-      align-items: center;
-      transform: scale(0.85);
-      margin: 5px auto;
+      justify-content: left; /* Links ausrichten */
+      align-items: left;
+      transform: scale(0.9);
       position: relative;
+      margin-bottom: 15px;
       overflow: hidden;
       opacity: 0;
       transition: opacity 1s ease-in;
@@ -108,7 +112,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 30px;
+      margin-top: 20px;
       transition: background-color 0.2s;
       opacity: 0;
       visibility: hidden;
@@ -164,7 +168,7 @@
       .button {
         font-size: 12px;
         margin-top: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
       }
     }
 
@@ -173,15 +177,15 @@
 <body>
   <div class="container">
     <h3> Merry Xmas, Vale! 😘🎄😘</h3> 
-    <p id="introText">Ist vielleicht bisschen nerdig..., aber <br> immerhin mach ich keine Stromflirtsprüche...🥲) <br> Klick aufs Geschenk! 😘  </p>
+    <p id="introText">Ist vielleicht bisschen nerdig, aber <br> immerhin mach ich keine Stromflirtsprüche...🥲) <br> Klick aufs Geschenk! 😘  </p>
     <div class="gift-box" id="giftBox">🎁</div>
     <div id="giftContent" class="hidden">
       <!-- Hier das GIF als Bild -->
       <div class="gif-container">
-        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2Z5aXJjN3pkYWZlaDhxYWltemR0ZTRkNm13ZXVqbGkwOGpjZDd5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rFVAPIrgSSsYAlr9Kg/giphy.gif" alt="Weihnachtsgeschenk GIF" />
+        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnhycnltYm1qMzd2dXdxaHZ0cGo5emN1bWxqbmJ5d2xieTM2YWdudyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohzdIk6GgMh1T6ldC/giphy.gif" alt="Weihnachtsgeschenk GIF" />
       </div>
       <p class="reveal-content" id="messageText">
-        Wir gehen Schneeschuhwandern (eine geführte <br> Schneetour auf den König des Bayerischen Waldes) 😘⛄ <br>
+        Wir gehen Schneeschuhwandern (eine geführte <br> Tour auf den König des Bayerischen Waldes) 😘⛄ <br>
         <br><strong> ❄️ ❄️ ❄️ ❄️ ❄️ ❄️</strong> <br> <br> Das Ganze dauert 6 Stunden 😂, an der <br> Talstation der Arber Bergbahn geht's los. <br> Dann wandern wir zum Gipfel des Großen Arber,<br> wo wir auf den Großen Arbersee gucken können <br>(vorher schmeiß ich dich aber in den Tiefschnee 😉)<br>
         Und nach dem Arberschutzhaus 🍽️ <br> geht's wieder zurück zum Ausgangspunkt.🥰 <br> <br> <strong>Wann:</strong> Müssen wir zusammen gucken 😌 <br>(19.01 / 02.02 / 16.02 )<br>
         <br><strong>Ort:</strong> Großer Arber 🏔️
