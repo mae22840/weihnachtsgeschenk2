@@ -151,25 +151,26 @@
       .container {
         padding: 10px;
       }
+      
       .gif-container {
         display: flex;
-        max-width: 80%;
         justify-content: center;
         align-items: center;
-        margin-top: 0;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 30px;
         opacity: 0;
         transition: opacity 1s ease-in;
+        width: 100%;
       }
 
-      .gif-container video {
-        max-width: 90%;
-        height: auto;
-        max-height: 500px;
-        object-fit: contain;
-        border-radius: 5px;
-        margin: 0 auto;
-      }
+    .gif-container img {
+      max-width: 60%; /* Verkleinert das GIF auf 60% der Container-Breite */
+      height: auto; /* Beibehaltung des Seitenverhältnisses */
+      max-height: 400px; /* Beschränkt die maximale Höhe */
+      object-fit: contain; /* Verhindert das Verziehen des GIFs */
+      border-radius: 5px;
+      margin: 0 auto; /* Zentriert das GIF */
+    }
 
       img {
         border-radius: 5px;
