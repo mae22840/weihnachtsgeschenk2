@@ -148,9 +148,14 @@
         padding: 10px;
       }
       .gif-container {
-        max-width: 70%;
-        transform: scale(1);
-        margin: 5px 0;
+        display: flex;
+        max-width: 80%;
+        justify-content: center; /* Zentriert das Bild */
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        opacity: 0;
+        transition: opacity 1s ease-in;
       }
       img {
         border-radius: 5px;
