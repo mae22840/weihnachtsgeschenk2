@@ -33,7 +33,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      overflow: hidden; /* Verhindert das Überlaufen von Inhalten */
+      overflow: hidden;
     }
 
     h3 {
@@ -96,16 +96,16 @@
       margin-bottom: 30px;
       opacity: 0;
       transition: opacity 1s ease-in;
-      width: 100%; /* Sicherstellen, dass der Container die volle Breite einnimmt */
+      width: 100%;
     }
 
-    .gif-container img {
+    .gif-container video {
       max-width: 100%;
       height: auto;
       max-height: 650px;
       object-fit: contain;
       border-radius: 5px;
-      margin: 0 auto; /* Zentriert das Bild im Container */
+      margin: 0 auto;
     }
 
     .button {
@@ -153,8 +153,8 @@
       }
       .gif-container {
         display: flex;
-        max-width: 100%; /* Bildcontainer nimmt die gesamte Breite ein */
-        justify-content: center; /* Zentriert das Bild */
+        max-width: 100%;
+        justify-content: center;
         align-items: center;
         margin-top: 0;
         margin-bottom: 10px;
@@ -162,13 +162,13 @@
         transition: opacity 1s ease-in;
       }
 
-      .gif-container img {
+      .gif-container video {
         max-width: 90%;
         height: auto;
         max-height: 500px;
         object-fit: contain;
         border-radius: 5px;
-        margin: 0 auto; /* Bild bleibt immer zentriert */
+        margin: 0 auto;
       }
 
       img {
@@ -192,7 +192,7 @@
     <div class="gift-box" id="giftBox">🎁</div>
     <div id="giftContent" class="hidden">
       <div class="gif-container">
-        <img src="dirndl.jpg" />
+        <video src="video.mp4" controls autoplay muted loop></video>
       </div> 
       <p class="reveal-content" id="messageText">
         Dieses Mal kein Einmalfoto 😉. <br>Dein richtiges Geschenk kriegst du, <br>wenn wir uns wiedersehen. 😘👀 <br>
