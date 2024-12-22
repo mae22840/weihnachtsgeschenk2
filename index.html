@@ -31,14 +31,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       text-align: center;
-      overflow: hidden; /* Verhindert das Überlaufen von Inhalten */
+      height: auto;
+      overflow: hidden;
     }
 
     h3 {
       font-size: 1.5rem;
       margin-left: 0;
+      margin-top: 0;
     }
 
     .hidden {
@@ -96,16 +98,14 @@
       margin-bottom: 30px;
       opacity: 0;
       transition: opacity 1s ease-in;
-      width: 100%; /* Sicherstellen, dass der Container die volle Breite einnimmt */
+      width: 100%;
     }
 
     .gif-container img {
-      max-width: 100%;
+      max-width: 70%; /* Bildgröße reduziert */
       height: auto;
-      max-height: 650px;
       object-fit: contain;
       border-radius: 5px;
-      margin: 0 auto; /* Zentriert das Bild im Container */
     }
 
     .button {
@@ -133,11 +133,8 @@
       .container {
         padding: 15px;
       }
-      .gif-container {
-        max-width: 100%;
-        transform: scale(1);
-        margin-top: 10px;
-        margin-bottom: 10px;
+      .gif-container img {
+        max-width: 90%; /* Bild auf mobilen Geräten etwas größer */
       }
       .reveal-content {
         font-size: 14px;
@@ -151,34 +148,14 @@
       .container {
         padding: 10px;
       }
-      .gif-container {
-        display: flex;
-        max-width: 100%; /* Bildcontainer nimmt die gesamte Breite ein */
-        justify-content: center; /* Zentriert das Bild */
-        align-items: center;
-        margin-top: 5px;
-        margin-bottom: 30px;
-        opacity: 0;
-        transition: opacity 1s ease-in;
-      }
-
       .gif-container img {
-        max-width: 100%;
-        height: auto;
-        max-height: 650px;
-        object-fit: contain;
-        border-radius: 5px;
-        margin: 0 auto; /* Bild bleibt immer zentriert */
-      }
-
-      img {
-        border-radius: 5px;
+        max-width: 100%; /* Bild für sehr kleine Bildschirme auf volle Breite */
       }
       .reveal-content {
-        font-size: 17px;
+        font-size: 12px;
       }
       .button {
-        font-size: 17px;
+        font-size: 12px;
         margin-top: 10px;
       }
     }
