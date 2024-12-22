@@ -33,6 +33,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      overflow: hidden; /* Verhindert das Überlaufen von Inhalten */
     }
 
     h3 {
@@ -103,7 +104,6 @@
       max-height: 650px;
       object-fit: contain;
       border-radius: 5px;
-      margin: 0 auto;
     }
 
     .button {
@@ -150,8 +150,8 @@
         padding: 10px;
       }
       .gif-container {
-        max-width: 100%;
         display: flex;
+        max-width: 80%;
         justify-content: center; /* Zentriert das Bild */
         align-items: center;
         margin-top: 5px;
@@ -168,7 +168,7 @@
         border-radius: 5px;
         margin: 0 auto; /* Zentriert das Bild */
       }
-      
+
       img {
         border-radius: 5px;
       }
