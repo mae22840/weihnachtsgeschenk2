@@ -157,6 +157,16 @@
         opacity: 0;
         transition: opacity 1s ease-in;
       }
+
+      .gif-container img {
+        max-width: 100%;
+        height: auto;
+        max-height: 650px;
+        object-fit: contain;
+        border-radius: 5px;
+        margin: 0 auto; /* Zentriert das Bild */
+      }
+      
       img {
         border-radius: 5px;
       }
@@ -180,7 +190,7 @@
         <img src="dirndl.jpg" />
       </div> 
       <p class="reveal-content" id="messageText">
-        Dieses Mal kein Einmalfoto 😉. <br>Dein richtiges Geschenk kriegst du, wenn wir uns wiedersehen. 😘👀 <br>
+        Dieses Mal kein Einmalfoto 😉. <br>Dein richtiges Geschenk kriegst du, <br>wenn wir uns wiedersehen. 😘👀 <br>
       </p>
     </div>
     <button id="resetButton" class="button">Nochmal von vorne, <br> weil's so schön war xD</button>
