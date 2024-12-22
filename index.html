@@ -96,6 +96,7 @@
       margin-bottom: 30px;
       opacity: 0;
       transition: opacity 1s ease-in;
+      width: 100%; /* Sicherstellen, dass der Container die volle Breite einnimmt */
     }
 
     .gif-container img {
@@ -104,6 +105,7 @@
       max-height: 650px;
       object-fit: contain;
       border-radius: 5px;
+      margin: 0 auto; /* Zentriert das Bild im Container */
     }
 
     .button {
@@ -151,7 +153,7 @@
       }
       .gif-container {
         display: flex;
-        max-width: 80%;
+        max-width: 100%; /* Bildcontainer nimmt die gesamte Breite ein */
         justify-content: center; /* Zentriert das Bild */
         align-items: center;
         margin-top: 5px;
@@ -166,7 +168,7 @@
         max-height: 650px;
         object-fit: contain;
         border-radius: 5px;
-        margin: 0 auto; /* Zentriert das Bild */
+        margin: 0 auto; /* Bild bleibt immer zentriert */
       }
 
       img {
